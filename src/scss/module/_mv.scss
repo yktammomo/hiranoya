@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.mv{
+    width: 100%;
+    &__img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1440 / 560;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.mv-bottom{
+    width: 100%;
+    &__bg{
+        background-image: url(../img/industrial/mv-bottom-bg.webp);
+        background-size: cover;
+        background-position: center;
+        padding-top: rem(100);
+        padding-bottom: rem(120);
+    }
+    &__text{
+        width: calc((1000px / 1440px)*100%);
+        margin: 0 auto;
+        line-height: 2;
+        padding-top: rem(120);
+    }
+}
+
+.mv-bottom-factory{
+    padding-top: rem(60);
+    padding-bottom: rem(80);
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.campany-contact{
+    width: 100%;
+    background-image: url(../img/top/company-contact-bg_pc.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: rem(200);
+    padding-bottom: rem(160);
+    aspect-ratio: 1440 / 568;
+    &__wrapper{
+        max-width: rem(1000);
+        gap: rem(30);
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__contact{
+        width: calc((480px / 1000px)*100%);
+        background: rgba($color: #fff, $alpha: 0.7);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+        position: relative;
+    }
+    &__campany{
+        width: calc((480px / 1000px)*100%);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+        background: rgba($color: #fff, $alpha: 0.7);
+        position: relative;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+}
+

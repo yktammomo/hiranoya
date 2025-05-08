@@ -1,0 +1,136 @@
+@use "global" as *;
+
+// 第一工場
+main{
+    overflow: hidden;
+}
+
+.first-factory{
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+
+}
+
+.first-factory-contents{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: rem(100);
+    margin-bottom: rem(50);
+    &__img{
+        width: calc((370px / 1000px)*100%);
+        img{
+            width: 100%;
+            aspect-ratio: 367 / 226;
+            display: block;
+        }
+    }
+    &__text{
+        width: calc((600px / 1000px)* 100%);
+        padding-left: rem(45);
+        line-height: 1.8;
+        margin-right: rem(20);
+    }
+}
+
+// スライダー
+
+.factory-slide{
+    background-color: #333;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    margin-bottom: rem(30);
+    &__frame{
+        padding-top: rem(20);
+        padding-bottom: rem(60);
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    &__heading{
+        width: fit-content;
+        color: #FFF;
+        position: relative;
+        padding-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: rem(50);
+        margin-bottom: rem(30);
+    }
+    &__heading--right{
+        margin-left: auto;
+        margin-right: rem(25);
+       
+    }
+    &__heading::before{
+        position: absolute;
+        content: "";
+        background-color: #E72424;
+        width: 16px;
+        height: 16px;
+        top: 20%;
+        left: 0;
+
+    }
+
+    &__contents{
+        width: 100%;
+    }
+    &__item{
+        max-width: rem(300);
+        aspect-ratio: 240 / 195;
+        margin-left: rem(50);
+        img{
+            display: block;
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            color: #fff;
+            padding-top: rem(10);
+            padding-bottom: rem(10);
+            font-size: 14px;
+        }
+    }
+    .splide__arrow{
+        top: 110%;
+        background: transparent;
+        svg{
+            fill: #fff;
+        }
+    }
+    .splide__arrow--prev{
+        left: 43%;
+    }
+    .splide__arrow--next{
+        right: 43%;
+    }
+    .splide__pagination{
+        bottom: -2em;
+    }
+}
+
+.factory-slide--1st{
+    width: calc((1114px / 1440px)*100%);
+    margin-right: 0;
+    margin-left: auto;
+    padding-left: rem(20);
+        .factory-slide__frame{
+            border-left: 1px solid #fff;
+            padding-left: rem(20);
+        }
+
+}
+.factory-slide--2st{
+    width: calc((1114px / 1440px)*100%);
+    margin-right: auto;
+    margin-left: 0;
+    padding-right: rem(20);
+    .factory-slide__frame{
+        border-right: 1px solid #fff;
+        padding-right: rem(20);
+    }
+}
+.factory-slide01{
+    width: 100%;
+
+}
+

@@ -1,0 +1,116 @@
+@use "global" as *;
+
+.aboutus-top{
+    margin-bottom: rem(120);
+    z-index: -10;
+    &__wrapper{
+        width: calc((1200px / 1440px)*100%);
+        height: 100vh;
+        padding-left: rem(50);
+        padding-right: rem(50);
+        margin: 0 auto;
+    }
+}
+
+.aboutus-top__contents{
+    background-image: url(../img/top/aboutus_bg.webp);
+    background-position: center;
+    background-size: cover;
+   width: 100%;
+}
+
+
+.aboutus-top__area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+// アニメーション　GSAP
+
+.spacer{
+    width: 100%;
+    height: 500px;
+}
+.aboutus-top__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.aboutus-top__item-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.aboutus-top{
+    &__img{
+        width: 150%;
+        height: auto;
+        aspect-ratio: 430 / 320;
+        display: block;
+        margin-right: rem(50);
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text{
+        // opacity: 0;
+        color: #fff;
+    }
+    &__number{
+        margin-top: rem(5);
+        margin-bottom: rem(30);
+        span{
+            display: block;
+            padding-top: rem(5);
+            padding-bottom: rem(5);
+            width: 95px;
+            color: #333;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 24px;
+        }
+    }
+    &__heading{
+        width: 100%;
+        padding-bottom: rem(20);
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: rem(30);
+        margin-bottom: rem(66);
+    }
+    &__texttext{
+        color: #fff;
+        line-height: 2.5;
+        
+    }
+
+
+}
+  
+  /* スマホ対応 */
+// @media (max-width: 768px) {
+//     .aboutus-top{
+//         &__point {
+//             flex-direction: column;
+//         }
+//         &__img.is-img,
+//         &__text.is-text {
+//             transform: translateY(50px); /* SPでは下からふわっと */
+//         }
+//     }
+// }
+  

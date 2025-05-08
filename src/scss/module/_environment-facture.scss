@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.environment-manufacture{
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+
+    &__item{
+        margin-bottom: rem(30);
+    }
+    &__text{
+        color: #fff;
+        &.is-text {
+            transform: translateX(50px); /* PC画像 左から */
+        }
+    }
+    &__number{
+        color: #fff;
+        font-size: rem(14);
+        font-weight: 700;
+        margin-bottom: rem(30);
+    }
+    &__heading{
+        width: 100%;
+        padding-bottom: rem(20);
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: rem(24);
+        margin-bottom: rem(40);
+    }
+    &__texttext{
+        color: #fff;
+        line-height: 2;
+    }
+    &__img{
+        aspect-ratio: 396 / 289;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.environment-manufacture__point02{
+    flex-direction: row-reverse;
+    .environment-manufacture__img{
+        margin-left: rem(30);
+    }
+}
+.environment-manufacture__point01{
+    .environment-manufacture__img{
+        margin-right: rem(30);
+    }
+}
+
+.environment-point{
+    padding-bottom: rem(120);
+}
+   

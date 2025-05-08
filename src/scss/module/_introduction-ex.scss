@@ -1,0 +1,25 @@
+@use "global" as *;
+.introduction-ex{
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+    background-image: url(../img/top/aboutus_bg.webp);
+    background-position: center;
+    background-size: cover;
+
+    .section-title2{
+        color: #fff;
+    }
+    
+}
+
+.card01{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: rem(30);
+    &__item{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}

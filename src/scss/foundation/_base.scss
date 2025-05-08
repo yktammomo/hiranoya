@@ -1,0 +1,37 @@
+@use "global" as *;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  @media screen and (max-width : $pc) {
+    font-size: vw(strip-unit($pc),16);
+  }
+  @media screen and (max-width : $tab) {
+    font-size: vw(strip-unit($sp),16);
+  }
+}
+* {
+  font-family: $noto-sans, sans-serif;
+  color: $txt-color;
+  letter-spacing: 0;
+}
+
+.sp-none{
+  display: block;
+}
+.pc-none{
+  display: none;
+}
+
+@media screen and (max-width : $tab){
+  .sp-none{
+    display: none;
+  }
+  .pc-none{
+    display: block;
+  }
+}

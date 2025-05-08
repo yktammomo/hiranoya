@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.factory-procced{
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+    &__contents{
+        width: 100%;
+        padding: rem(30);
+        img{
+            display: block;
+            width: 100%;
+            margin-bottom: rem(30);
+        }
+        
+    }
+}
