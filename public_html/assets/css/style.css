@@ -150,6 +150,68 @@
   z-index: -10;
 }
 
+.section-title4 {
+  margin-bottom: 20px;
+}
+
+.section-title4::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #E72424;
+  top: 20%;
+  left: 0;
+}
+
+.section-title4__wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title4__wrapper::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 90%;
+  background-color: #E72424;
+  top: 10%;
+  left: 0;
+}
+
+.section-title4__bigtitle {
+  font-size: clamp(18px, 1.2vw + 12px, 24px);
+  padding-left: 30px;
+}
+
+.page-title--eg {
+  font-size: 16px;
+  position: relative;
+  font-size: clamp(14px, 2.4vw + 2px, 16px);
+  margin-bottom: 1.44rem;
+}
+
+.page-title--eg:before {
+  position: absolute;
+  background-color: #333;
+  content: "";
+  width: 50vw;
+  height: 1px;
+  top: 50%;
+  left: -50vw;
+}
+
+.page-title--jp {
+  font-size: clamp(24px, 4.8vw + 0px, 48px);
+  letter-spacing: 0.9rem;
+  margin-bottom: 3.75rem;
+}
+
+.font-color-bk {
+  color: #333;
+}
+
 .bg-gray {
   background-color: #333;
 }
@@ -387,6 +449,10 @@ html {
   padding-right: 1.25rem;
   padding-top: 0.9375rem;
   background-color: transparent;
+}
+
+.header.header-black {
+  background-color: #333;
 }
 
 .header-nav {
@@ -1162,6 +1228,32 @@ html {
   padding-bottom: 5rem;
 }
 
+.mv-company {
+  width: 100%;
+  height: auto;
+  padding-top: 15.625rem;
+  margin-bottom: 7.5rem;
+}
+
+.mv-company__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000/631;
+}
+
+.mv-company__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mv-company .contents-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .product-infomation {
   margin-bottom: 7.5rem;
 }
@@ -1511,6 +1603,59 @@ main {
 
 .environment-point {
   padding-bottom: 7.5rem;
+}
+
+.SEO-massage__contents {
+  width: 63.8%;
+  margin-right: 2.5rem;
+}
+
+.SEO-massage__img {
+  width: 32.2%;
+  height: auto;
+  aspect-ratio: 322/272;
+}
+
+.SEO-massage__img img {
+  aspect-ratio: 322/272;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.SEO-massage__text {
+  line-height: 2;
+  font-size: clamp(14px, 2.4vw + 2px, 16px);
+}
+
+.SEO-massage__name {
+  font-size: clamp(14px, 2.4vw + 2px, 16px);
+  font-weight: 700;
+  margin-top: 1.25rem;
+  text-align: right;
+}
+
+.company-info__contents {
+  width: 100%;
+}
+
+.company-info__dl {
+  width: 100%;
+}
+
+.contents-dl {
+  width: 100%;
+}
+
+.contents-dt {
+  width: 24.2574257426%;
+  border-bottom: 2px solid #e72424;
+}
+
+.contents-dd {
+  width: 75.7425742574%;
+  border-bottom: 2px solid #ddd;
 }
 
 @media screen and (max-width: 1366px) {

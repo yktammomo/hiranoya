@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.SEO-massage{
+    &__contents{
+        width: calc((638px / 1000px)*100%);
+        margin-right: rem(40);
+    }
+
+    &__img{
+        width: calc((322px / 1000px)*100%);
+        height: auto;
+        aspect-ratio: 322 / 272;
+        img{
+            aspect-ratio: 322 / 272;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            
+        }
+    }
+    &__text{
+        line-height: 2;
+        font-size: clamp(14px, calc(2.4vw + 2px), 16px);
+    }
+    &__name{
+        font-size: clamp(14px, calc(2.4vw + 2px), 16px);
+        font-weight: 700;
+        margin-top: rem(20);
+        text-align: right;
+    }
+}

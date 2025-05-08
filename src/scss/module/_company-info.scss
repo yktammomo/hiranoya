@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.company-info{
+    &__contents{
+        width: 100%;
+    }
+    &__dl{
+        width: 100%;
+    }
+
+}
+
+.contents-dl{
+    width: 100%;
+}
+.contents-dt{
+    width: calc((196px / 808px )*100%);
+    border-bottom: 2px solid #e72424;
+}
+.contents-dd{
+    width: calc((612px / 808px )*100%);
+    border-bottom: 2px solid #ddd;
+}
